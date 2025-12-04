@@ -6,8 +6,8 @@ customCloudApi:
     enabled: false
     endpoint: "api.cloud.yandex.net:443"
 image:
-    repository: cr.yandex/yc-marketplace/yandex-cloud/cert-manager-webhook-yandex/cert-manager-webhook-yandex1749231714289200163949703675370054230465107054664
-    tag: 1.0.3
+    repository: docker pull ghcr.io/knpsh/cert-manager-webhook-yandex
+    tag: v1.0.4
     pullPolicy: Always
 service:
     type: ClusterIP
