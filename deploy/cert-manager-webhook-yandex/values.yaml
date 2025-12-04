@@ -3,7 +3,7 @@ certManager:
     # must be identical to cert-manager.serviceAccount.name
     serviceAccountName: cert-manager-with-yc-webhook
 customCloudApi:
-    enabled: false
+    enabled: true
     endpoint: "api.yandexcloud.kz:443"
 image:
     repository: ghcr.io/knpsh/cert-manager-webhook-yandex
