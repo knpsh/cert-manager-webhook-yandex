@@ -4,9 +4,9 @@ certManager:
     serviceAccountName: cert-manager-with-yc-webhook
 customCloudApi:
     enabled: false
-    endpoint: "api.cloud.yandex.net:443"
+    endpoint: "api.yandexcloud.kz:443"
 image:
-    repository: docker pull ghcr.io/knpsh/cert-manager-webhook-yandex
+    repository: ghcr.io/knpsh/cert-manager-webhook-yandex
     tag: v1.0.4
     pullPolicy: Always
 service:
@@ -22,7 +22,7 @@ config:
 installClusterIssuer:
     enabled: true
 cert-manager:
-    enabled: true
+    enabled: false
     image:
         pullPolicy: Always
         repository: quay.io/jetstack/cert-manager-controller
